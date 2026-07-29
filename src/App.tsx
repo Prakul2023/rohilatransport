@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-//@ts-ignore
 import logo from './assets/logo.jpg';
 const FadeIn: React.FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => (
   <motion.div
@@ -113,7 +112,7 @@ const App: React.FC = () => {
           </FadeIn>
           <FadeIn>
             <div className="text-md md:text-right mt-8 md:mt-0 text-slate-400 space-y-2">
-              <p>Email: <a href="mailto:Info@rohilatransportltd.co.uk" className="hover:text-white transition">bitupdp@gmail.com</a></p>
+              <p>Email: <a href="mailto:info@rohilatransportltd.co.uk" className="hover:text-white transition">info@rohilatransportltd.co.uk</a></p>
               <p>WhatsApp: <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+44 7401 130540</a></p>
               <p className="pt-4">© 2026 Rohila Transport Ltd. All rights reserved.</p>
             </div>
