@@ -54,8 +54,7 @@ const App: React.FC = () => {
           </a>
         </div>
       </nav>
-
-      {/* Hero Section */}
+        {/* Hero Section */}
       <section id="home" className="relative h-[80vh] flex items-center justify-center bg-[#1a2b4b] text-white">
         <div className="relative z-10 text-center px-4">
           <FadeIn>
@@ -109,6 +108,7 @@ const App: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <FadeIn key={i} delay={i * 0.2}>
+              <div className="text-center"></div>
               <div className="p-8 bg-slate-50 rounded-xl hover:shadow-lg transition">
                 <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-6 font-bold text-red-600">
                   {i + 1}
@@ -135,6 +135,19 @@ const App: React.FC = () => {
               <p>Email: <a href="mailto:info@rohilatransportltd.co.uk" className="hover:text-white transition">info@rohilatransportltd.co.uk</a></p>
               <p>WhatsApp: <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+44 7401 130540</a></p>
               <p className="pt-4 text-xs">© 2026 Rohila Transport Ltd. All rights reserved.</p>
+              <section className="py-16 px-8 max-w-7xl mx-auto">
+  <FadeIn>
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Why us</h2>
+      <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+        Our drivers have many years of experience, and we promise good and safe deliveries. 
+        At Rohila Transport Ltd, we prioritize the safety of your cargo and ensure every 
+        journey is handled with the utmost professionalism and care.
+      </p>
+    </div>
+  </FadeIn>
+</section>
+              
             </div>
           </FadeIn>
         </div>
