@@ -20,13 +20,13 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
     {/* Navigation */}
-    {/* Navigation */}
+  {/* Navigation */}
 <nav className="flex items-center justify-between px-8 py-6 bg-white sticky top-0 z-50 shadow-sm">
   <div className="flex items-center space-x-2">
-    {/* This line replaces the text with your logo image */}
+    {/* This is the part that makes the logo appear */}
     <img src={logo} alt="Rohila Transport Logo" className="h-12 md:h-16 w-auto" />
   </div>
-  <div className="hidden md:flex space-x-8 font-medium items-center">
+  <div className="hidden md:flex space-x-8 font-medium items-center text-[#1a2b4b]">
     <a href="#home" className="hover:text-[#d32f2f] transition">Home</a>
     <a href="#services" className="hover:text-[#d32f2f] transition">Services</a>
     <a 
