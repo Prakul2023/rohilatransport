@@ -108,7 +108,7 @@ const App: React.FC = () => {
   <div className="max-w-7xl mx-auto">
     <FadeIn>
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">Why Us</h2>
+        <h2 className="text-4xl font-bold mb-4 text-slate-900">Why Us</h2>
         <div className="w-20 h-1 bg-red-600 mx-auto"></div>
       </div>
     </FadeIn>
@@ -129,11 +129,11 @@ const App: React.FC = () => {
         }
       ].map((item, i) => (
         <FadeIn key={i} delay={i * 0.2}>
-          <div className="p-8 bg-slate-50 rounded-xl hover:shadow-lg transition h-full border border-slate-100">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-6 font-bold text-red-600">
+          <div className="p-8 bg-slate-50 rounded-xl hover:shadow-lg transition h-full border border-slate-100 text-center">
+            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-6 font-bold text-red-600 mx-auto">
               {i + 1}
             </div>
-            <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+            <h3 className="text-xl font-bold mb-4 text-slate-900">{item.title}</h3>
             <p className="text-slate-600 leading-relaxed">{item.desc}</p>
           </div>
         </FadeIn>
@@ -142,6 +142,7 @@ const App: React.FC = () => {
   </div>
 </section>
 
+        
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <FadeIn key={i} delay={i * 0.2}>
@@ -158,6 +159,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Footer */}
+      
       <footer className="bg-slate-900 text-white py-12 px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 justify-between items-center">
           <FadeIn>
@@ -171,19 +173,8 @@ const App: React.FC = () => {
               <p>Email: <a href="mailto:info@rohilatransportltd.co.uk" className="hover:text-white transition">info@rohilatransportltd.co.uk</a></p>
               <p>WhatsApp: <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+44 7401 130540</a></p>
               <p className="pt-4 text-xs">© 2026 Rohila Transport Ltd. All rights reserved.</p>
-              <section className="py-16 px-8 max-w-7xl mx-auto">
-  <FadeIn>
-    <div className="text-center md:text-left">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Why us</h2>
-      <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
-        Our drivers have many years of experience, and we promise good and safe deliveries. 
-        At Rohila Transport Ltd, we prioritize the safety of your cargo and ensure every 
-        journey is handled with the utmost professionalism and care.
-      </p>
-    </div>
-  </FadeIn>
-</section>
               
+
             </div>
           </FadeIn>
         </div>
