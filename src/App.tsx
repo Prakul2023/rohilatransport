@@ -20,26 +20,25 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
     {/* Navigation */}
-    <nav className="flex items-center justify-between px-8 py-6 bg-white sticky top-0 z-50 shadow-sm">
-      <div className="flex items-center space-x-2">
-        <div className="text-3xl font-bold tracking-tighter">
-          <span className="text-[#1a2b4b]">ROHILA</span>
-          <span className="text-[#d32f2f]"> TRANSPORT</span>
-        </div>
-      </div>
-      <div className="hidden md:flex space-x-8 font-medium">
-        <a href="#home" className="hover:text-[#d32f2f] transition">Home</a>
-        <a href="#services" className="hover:text-[#d32f2f] transition">Services</a>
-        <a 
-          href="https://wa.me/447401130540" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-[#1a2b4b] hover:text-[#d32f2f] transition"
-        >
-          WhatsApp Us
-        </a>
-      </div>
-    </nav>
+    {/* Navigation */}
+<nav className="flex items-center justify-between px-8 py-6 bg-white sticky top-0 z-50 shadow-sm">
+  <div className="flex items-center space-x-2">
+    {/* This line replaces the text with your logo image */}
+    <img src={logo} alt="Rohila Transport Logo" className="h-12 md:h-16 w-auto" />
+  </div>
+  <div className="hidden md:flex space-x-8 font-medium items-center">
+    <a href="#home" className="hover:text-[#d32f2f] transition">Home</a>
+    <a href="#services" className="hover:text-[#d32f2f] transition">Services</a>
+    <a 
+      href="https://wa.me/447401130540" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="bg-[#d32f2f] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#b71c1c] transition"
+    >
+      WhatsApp Us
+    </a>
+  </div>
+</nav>
 
     {/* Hero Section */}
     <section id="home" className="relative h-[80vh] flex items-center justify-center bg-[#1a2b4b] text-white">
