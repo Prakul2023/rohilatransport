@@ -104,44 +104,7 @@ const App: React.FC = () => {
             <div className="w-20 h-1 bg-red-600 mx-auto"></div>
           </div>
         </FadeIn>
-        <section id="why-us" className="py-20 px-8 bg-white">
-  <div className="max-w-7xl mx-auto">
-    <FadeIn>
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4 text-slate-900">Why Us</h2>
-        <div className="w-20 h-1 bg-red-600 mx-auto"></div>
-      </div>
-    </FadeIn>
-
-    <div className="grid md:grid-cols-3 gap-8">
-      {[
-        {
-          title: "Experienced Drivers",
-          desc: "Our drivers have many years of industry experience, ensuring your goods are in expert hands."
-        },
-        {
-          title: "Safe Deliveries",
-          desc: "We promise good and safe deliveries, prioritizing the security of your cargo from start to finish."
-        },
-        {
-          title: "Professional Care",
-          desc: "At Rohila Transport Ltd, we ensure every journey is handled with the utmost professionalism."
-        }
-      ].map((item, i) => (
-        <FadeIn key={i} delay={i * 0.2}>
-          <div className="p-8 bg-slate-50 rounded-xl hover:shadow-lg transition h-full border border-slate-100 text-center">
-            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-6 font-bold text-red-600 mx-auto">
-              {i + 1}
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-slate-900">{item.title}</h3>
-            <p className="text-slate-600 leading-relaxed">{item.desc}</p>
-          </div>
-        </FadeIn>
-      ))}
-    </div>
-  </div>
-</section>
-
+        
         
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => (
@@ -157,6 +120,45 @@ const App: React.FC = () => {
           ))}
         </div>
       </section>
+          {/* Why Us Section */}
+    <section id="why-us" className="py-20 px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <FadeIn>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-slate-900">Why Us</h2>
+            <div className="w-20 h-1 bg-red-600 mx-auto"></div>
+          </div>
+        </FadeIn>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Experienced Drivers",
+              desc: "Our drivers have many years of industry experience, ensuring your goods are in expert hands."
+            },
+            {
+              title: "Safe Deliveries",
+              desc: "We promise good and safe deliveries, prioritizing the security of your cargo from start to finish."
+            },
+            {
+              title: "Professional Care",
+              desc: "At Rohila Transport Ltd, we ensure every journey is handled with the utmost professionalism."
+            }
+          ].map((item, i) => (
+            <FadeIn key={i} delay={i * 0.2}>
+              <div className="p-8 bg-slate-50 rounded-xl hover:shadow-lg transition h-full border border-slate-100 text-center flex flex-col items-center">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-6 font-bold text-red-600">
+                  {i + 1}
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-slate-900">{item.title}</h3>
+                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+
 
       {/* Footer */}
       
