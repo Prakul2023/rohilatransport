@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+//@ts-ignore
 import logo from './assets/logo.jpg';
 const FadeIn: React.FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => (
   <motion.div
