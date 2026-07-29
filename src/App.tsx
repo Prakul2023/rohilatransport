@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import logo from './assets/logo.jpg';
 const FadeIn: React.FC<{ children: React.ReactNode; delay?: number }> = ({ children, delay = 0 }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -13,51 +13,65 @@ const FadeIn: React.FC<{ children: React.ReactNode; delay?: number }> = ({ child
 );
 
 const App: React.FC = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:Info@rohilatransportltd.co.uk?subject=Inquiry for Rohila Transport";
+  };
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between px-8 py-6 bg-white shadow-sm sticky top-0 z-50">
-        <div className="flex items-center space-x-2">
-          <div className="text-3xl font-bold tracking-tighter">
-            <span className="text-[#1a2b4b]">ROHILA</span>
-            <span className="text-[#d32f2f]"> TRANSPORT</span>
-          </div>
+    {/* Navigation */}
+    <nav className="flex items-center justify-between px-8 py-6 bg-white sticky top-0 z-50 shadow-sm">
+      <div className="flex items-center space-x-2">
+        <div className="text-3xl font-bold tracking-tighter">
+          <span className="text-[#1a2b4b]">ROHILA</span>
+          <span className="text-[#d32f2f]"> TRANSPORT</span>
         </div>
-        <div className="hidden md:flex space-x-8 font-medium">
-          <a href="#home" className="hover:text-[#d32f2f] transition">Home</a>
-          <a href="#services" className="hover:text-[#d32f2f] transition">Services</a>
-          <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-[#d32f2f] text-white rounded-md hover:bg-red-700 transition">WhatsApp Us</a>
-        </div>
-      </nav>
+      </div>
+      <div className="hidden md:flex space-x-8 font-medium">
+        <a href="#home" className="hover:text-[#d32f2f] transition">Home</a>
+        <a href="#services" className="hover:text-[#d32f2f] transition">Services</a>
+        <a 
+          href="https://wa.me/447401130540" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[#1a2b4b] hover:text-[#d32f2f] transition"
+        >
+          WhatsApp Us
+        </a>
+      </div>
+    </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="relative h-[80vh] flex items-center justify-center bg-[#1a2b4b] text-white overflow-hidden">
-        <div className="relative z-10 text-center px-4">
-          <FadeIn>
-            <h2 className="text-sm uppercase tracking-[0.3em] mb-4 text-red-500 font-bold">Reliable | Professional | Nationwide</h2>
-          </FadeIn>
-          
-          <FadeIn delay={0.2}>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-6">Moving Your Business <br/> Forward.</h1>
+    {/* Hero Section */}
+    <section id="home" className="relative h-[80vh] flex items-center justify-center bg-[#1a2b4b] text-white">
+      <div className="relative z-10 text-center px-4">
+        <FadeIn>
+          <h2 className="text-sm uppercase tracking-[0.3em] mb-4 text-red-500 font-bold">
+            Reliable | Professional | Nationwide
+          </h2>
+        </FadeIn>
           </FadeIn>
 
           <FadeIn delay={0.4}>
             <p className="text-xl max-w-2xl mx-auto mb-8 text-slate-300">
               Rohila Transport Ltd provides industry-leading logistics and haulage solutions across the UK.
             </p>
-          </FadeIn>
-
-          <FadeIn delay={0.6}>
-            <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#d32f2f] hover:bg-red-700 text-white font-bold rounded-lg transition text-lg">
-                Get a Quote via WhatsApp
-              </a>
-              <a href="mailto:bitupdp@gmail.com" className="px-8 py-4 border-2 border-white hover:bg-white hover:text-[#1a2b4b] text-white font-bold rounded-lg transition text-lg text-center">
-                Email Us
-              </a>
-            </div>
-          </FadeIn>
-        </div>
+            <FadeIn delay={0.6}>
+  <div className="flex flex-col md:flex-row justify-center gap-4">
+    <a
+      href="https://wa.me/447401130540"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[#d32f2f] text-white px-8 py-3 rounded font-bold hover:bg-[#b71c1c] transition text-center"
+    >
+      Get a Quote via WhatsApp
+    </a>
+    <button
+      onClick={handleEmailClick}
+      className="border-2 border-[#1a2b4b] text-[#1a2b4b] px-8 py-3 rounded font-bold hover:bg-[#1a2b4b] hover:text-white transition"
+    >
+      Email Us
+    </button>
+  </div>
+</FadeIn>
       </section>
 
       {/* Services Section */}
@@ -99,7 +113,7 @@ const App: React.FC = () => {
           </FadeIn>
           <FadeIn>
             <div className="text-md md:text-right mt-8 md:mt-0 text-slate-400 space-y-2">
-              <p>Email: <a href="mailto:bitupdp@gmail.com" className="hover:text-white transition">bitupdp@gmail.com</a></p>
+              <p>Email: <a href="mailto:Info@rohilatransportltd.co.uk" className="hover:text-white transition">bitupdp@gmail.com</a></p>
               <p>WhatsApp: <a href="https://wa.me/447401130540" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+44 7401 130540</a></p>
               <p className="pt-4">© 2026 Rohila Transport Ltd. All rights reserved.</p>
             </div>

@@ -1,0 +1,5 @@
+# In rohilatransport/public/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://rohilatransportltd.co.uk/sitemap.xml
